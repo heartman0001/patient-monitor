@@ -8,7 +8,7 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:socket\"",
     "build": "next build",
     "start": "next start",
-    "start:socket": "tsx server/socket.ts",
+    "start:socket": "npx tsx server/socket.ts",
     "lint": "eslint"
   },
   "dependencies": {
