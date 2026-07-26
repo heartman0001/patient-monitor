@@ -308,7 +308,7 @@ process.on('SIGINT', () => {
   httpServer.close();
 });
 
-const PORT = process.env.SOCKET_PORT || 3004;
+const PORT = process.env.PORT || process.env.SOCKET_PORT || 3004;
 
 httpServer.listen(PORT, () => {
   console.log(`Socket.io server running on port ${PORT}`);
